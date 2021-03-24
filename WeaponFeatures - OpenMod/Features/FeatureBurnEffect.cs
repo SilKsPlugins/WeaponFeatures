@@ -117,8 +117,7 @@ namespace WeaponFeatures.Features
 
         private delegate void LifeSimulated(Player player, bool applied);
         private static event LifeSimulated OnLifeSimulated;
-
-        [Obfuscation(Exclude = true)]
+        
         [HarmonyPatch(typeof(PlayerLife), "simulate")]
         private class PlayerLifePatch
         {

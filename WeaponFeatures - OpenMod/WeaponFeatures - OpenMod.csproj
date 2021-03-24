@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenMod.Unturned" Version="2.1.8" />
+    <PackageReference Include="OpenMod.Unturned" Version="3.0.22" />
   </ItemGroup>
 
 </Project>

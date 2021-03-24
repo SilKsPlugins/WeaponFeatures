@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <PackageLicenseExpression></PackageLicenseExpression>
+	<PackageTags>openmod openmod-plugin unturned</PackageTags>
+	<RootNamespace>WeaponFeatures</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateNugetPackage>true</GenerateNugetPackage>
+    <AssemblyName>WeaponFeatures</AssemblyName>
+    <Authors>SilK</Authors>
+    <Company>SilK's Plugins</Company>
+    <Version>1.0.0</Version>
+    <Copyright>Copyright © SilK's Plugins 2020</Copyright>
+    <Product>WeaponFeatures</Product>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="config.yaml" />
+    <EmbeddedResource Include="translations.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenMod.Unturned" Version="2.1.8" />
+  </ItemGroup>
+
+</Project>

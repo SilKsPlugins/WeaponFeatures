@@ -1,0 +1,9 @@
+config:
+  loading: "Loading weapon configs..."
+  loaded_success: "Loaded weapon configs successfully."
+  loaded_errors: "{Errors} errors/warnings occurred while loading weapon configs."
+  warnings:
+    no_weapons: "No weapon configs to load."
+    no_features: "Weapon config with Id '{Id}' has no weapon features and will do nothing."
+    chance_zero: "Weapon config with Id '{Id}' has a feature ({Feature}) with a chance of zero and will do nothing."
+    sum_above_one: "Weapon config with Id '{Id}' has features with total chances greater than one. Some features will never work."

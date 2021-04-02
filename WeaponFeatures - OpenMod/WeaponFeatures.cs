@@ -12,7 +12,7 @@ using System.Reflection;
 using WeaponFeatures.Configuration;
 using WeaponFeatures.Features;
 
-[assembly: PluginMetadata("WeaponFeatures", DisplayName = "WeaponFeatures")]
+[assembly: PluginMetadata("WeaponFeatures", DisplayName = "Weapon Features")]
 namespace WeaponFeatures
 {
     public class WeaponFeatures : OpenModUnturnedPlugin
@@ -38,9 +38,6 @@ namespace WeaponFeatures
 
         protected override UniTask OnLoadAsync()
         {
-            if (DateTime.Now > new DateTime(2021, 1, 1, 0, 0, 0))
-                throw new Exception("Use the version from imperial plugins.");
-
             Level.onPostLevelLoaded += OnPostLevelLoaded;
             if (Level.isLoaded)
             {
